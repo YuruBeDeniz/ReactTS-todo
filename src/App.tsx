@@ -36,16 +36,18 @@ const App: React.FC = () => {
     <div className="App">
       <div className='header'>
         <div className='inputContainer'>
+          <label>Task:</label>
           <input 
             type='text'  
             name='task' 
             placeholder='Add a task'
             value={task}
             onChange={handleChange} />
+            
+          <label>Set a deadline(in days):</label>
           <input 
             type='number' 
-            name='deadline' 
-            placeholder='Set a deadline (in days)'
+            name='deadline'
             value={deadLine}
             onChange={handleChange} />
         </div>
